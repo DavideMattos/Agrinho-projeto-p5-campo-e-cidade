@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Campo-Cidade</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Festejando a Conexão Campo-Cidade</h1>
+        <p>Uma celebração interativa da relação entre o rural e o urbano</p>
+    </header>
+    
+    <main>
+        <div id="canvas-container"></div>
+        <div class="controls">
+            <h2>Controles de Interação</h2>
+
+            <button id="toggle-view">Alternar Vista</button>
+            
+            <div class="slider-container">
+                <label for="balance">Equilíbrio Campo-Cidade</label>
+                <input type="range" id="balance" min="0" max="100" value="50">
+            </div>
+
+            <div class="control-group">
+                <h3>Elementos Visuais</h3>
+                <button id="add-rural-element">Adicionar Elemento Rural</button>
+                <button id="add-urban-element">Adicionar Elemento Urbano</button>
+                <input type="checkbox" id="show-animals" checked> <label for="show-animals">Mostrar Animais</label><br>
+                <input type="checkbox" id="show-vehicles" checked> <label for="show-vehicles">Mostrar Veículos</label>
+            </div>
+
+            <div class="control-group">
+                <h3>Ambiente</h3>
+                <label for="season-selector">Estação:</label>
+                <select id="season-selector">
+                    <option value="spring">Primavera</option>
+                    <option value="summer">Verão</option>
+                    <option value="autumn">Outono</option>
+                    <option value="winter">Inverno</option>
+                </select>
+                <button id="toggle-day-night">Dia/Noite</button>
+            </div>
+
+            <div class="control-group">
+                <h3>Sons</h3>
+                <button id="toggle-sound">Ativar/Desativar Som</button>
+                <div class="slider-container">
+                    <label for="volume">Volume</label>
+                    <input type="range" id="volume" min="0" max="100" value="50">
+                </div>
+            </div>
+
+            <p class="instruction">
+                <br>
+                **Dica:** Tente clicar ou arrastar o mouse diretamente sobre a visualização!
+            </p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Projeto criado com p5.js | Celebrando a interdependência entre o campo e a cidade</p>
+    </footer>
+    
+    <script src="sketch.js"></script>
+</body>
+</html>
